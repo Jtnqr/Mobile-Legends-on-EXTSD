@@ -2,8 +2,8 @@
 
 ## Introduction
 
-This script allow you to mount your Mobile Legends folder on EXTERNAL_SDCARD without reformatting it.
-Using bindfs as a program to mount folders.
+This script allow you to mount your Mobile Legends folder on EXTERNAL_SDCARD without reformatting it. \n
+Using bindfs to mount and magisk for start on boot.
 
 ## Current Issues
 ### Read this before using!
