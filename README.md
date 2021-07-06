@@ -6,6 +6,7 @@ This script allow you to mount your Mobile Legends folder on EXTERNAL_SDCARD wit
 Using bindfs as a program to mount folders.
 
 ## Current Issues
+### Read this before continuing!
 
 1. Must run the script before putting in service.d directory to get full path of EXTERNAL_SDCARD.
 2. In order to get full path of EXTERNAL_SDCARD, the device must have 1 External Storage attached or it will crash.
