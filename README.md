@@ -9,6 +9,7 @@ Using bindfs as a program to mount folders.
 - In order to get full path of EXTERNAL_SDCARD, the device must have 1 External Storage attached or it will not run.
 
 # Usage
-
-Put this into magisk service.d directory
-`/data/adb/service.d`
+- Download bindfs and put it on /sdcard
+- Run the script first before putting the script to directory
+- Put the script into magisk service.d directory `/data/adb/service.d`
+- Restart to get it mounted
