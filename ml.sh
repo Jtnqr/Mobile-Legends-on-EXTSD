@@ -9,7 +9,7 @@ SCRIPT_PATH="`dirname \"$0\"`"
 ## CAUTION! ##
 # THIS VARIABLE ASSIGNMENT WILL NOT WORK IF
 # THERE'S MORE THAN 1 EXTERNAL STORAGE CONNECTED!
-EXT_SDCARD=/mnt/media_rw/C473-1583
+EXT_SDCARD=
 if [[ $EXT_SDCARD == "" ]]; then
     echo "Variable is empty"
     EXT_TEMP="$(ls -d /mnt/media_rw/* | head -n 1)" || exit 2
