@@ -27,15 +27,21 @@ if [ ! -f /system/bin/bindfs ]; then
         echo "bindfs is not found!"
         exit
     fi
+    if [ ! -w / ]; then
+        RO_ROOT=1
+        mount -o rw,remount /
+    fi
     cp /data/media/0/bindfs /bin/bindfs
     chmod 0775 /bin/bindfs
     chown 0:2000 /bin/bindfs
     echo "Successfully copied bindfs"
+    if [[ RO_ROOT == 1 ]]; then
+        mount -o ro,remount /
+    fi
 fi
 
 while ! mountpoint -q "$EXT_SDCARD"; do
     sleep 1
-    echo X
 done && echo "$EXT_SDCARD is mounted"
 
 bindfs -u $(stat -c %u /sdcard/Android/data/$APP_NAME) -g 9997 -p a-rwx,ug+rw,ug+X $SD1_DIR /mnt/runtime/write/emulated/0/Android/data/$APP_NAME && \
