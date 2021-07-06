@@ -9,7 +9,7 @@ Using bindfs as a program to mount folders.
 
 1. Must run the script before putting in service.d directory to get full path of EXTERNAL_SDCARD.
 2. In order to get full path of EXTERNAL_SDCARD, the device must have 1 External Storage attached or it will crash.
-3. Must move the content of com.mobile.legends directory manually using file explorer.
+3. Must move the content of com.mobile.legends directory manually.
 
 ## Usage
 1. Download [bindfs (ARM64)](https://www.androidfilehost.com/?fid=4349826312261681311) and put it on /sdcard.
