@@ -12,7 +12,7 @@ Using bindfs as a program to mount folders.
 
 ## Usage
 1. Download [bindfs (Arm64)](https://www.androidfilehost.com/?fid=4349826312261681311) and put it on /sdcard.
-2. Run the script first using terminal emulator before putting the script to directory `bash ml.sh`.
+2. Run the script first using terminal emulator `bash ml.sh` before putting the script to directory.
 3. Put the script into magisk service.d directory `/data/adb/service.d`.
 4. Restart to get it mounted.
 
