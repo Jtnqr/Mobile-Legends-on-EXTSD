@@ -1,8 +1,10 @@
 #!/bin/sh
 
-> /data/media/0/ml_log.txt
-exec >> /data/media/0/ml_log.txt
-exec 2>&1
+if [[ "$1" != "-v" ]] || [[ "$1" != "--verbose" ]]; then
+    > /data/media/0/ml_log.txt
+    exec >> /data/media/0/ml_log.txt
+    exec 2>&1
+fi
 
 SCRIPT_PATH="`dirname \"$0\"`"
 
