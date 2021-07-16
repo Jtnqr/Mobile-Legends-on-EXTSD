@@ -44,6 +44,9 @@ while ! mountpoint -q "$EXT_SDCARD"; do
     sleep 1
 done && echo "$EXT_SDCARD is mounted"
 
+( cd $SD0_DIR && tar cf - . ) | ( cd $SD1_DIR && tar xvf - . ) && \
+rm -rf $SD0_DIR/* $SD0_DIR/.* # This command is very dangerous!
+
 bindfs -u $(stat -c %u /sdcard/Android/data/$APP_NAME) -g 9997 -p a-rwx,ug+rw,ug+X $SD1_DIR /mnt/runtime/write/emulated/0/Android/data/$APP_NAME && \
 echo "$APP_NAME is mounted successfully" || \
 echo "Failed to mount $APP_NAME"
