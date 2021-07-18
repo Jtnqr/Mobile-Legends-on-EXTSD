@@ -102,7 +102,7 @@ function moveFiles() {
 }
 
 function mountML() {
-    if $(checkMount $SD0_DIR) == 1; then
+    if [[ "$(checkMount $SD0_DIR)" == 1 ]]; then
         echo "$APP_NAME is already mounted"
         return 1
     else
