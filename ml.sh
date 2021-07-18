@@ -55,7 +55,7 @@ function findEXTSD() {
 }
 
 function checkMount() {
-    if [[ "$1" == "$EXT_SDCARD" ]]
+    if [[ "$1" == "$EXT_SDCARD" ]]; then
         while ! mountpoint -q "$EXT_SDCARD"; do
             sleep 1
         done && echo "SD card is mounted"
