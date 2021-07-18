@@ -121,6 +121,6 @@ function mountML() {
 findEXTSD
 checkMount $EXT_SDCARD
 
-if [[ $mount_ML != 0]]; then
+if [[ $MOUNT_ML == 1 ]]; then
     mountML
 fi
