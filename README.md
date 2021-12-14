@@ -8,7 +8,7 @@ Using bindfs to mount and magisk for start on boot.
 
 ## Prerequisite
 
-1. Magisk need to be installed.
+1. Magisk.
 2. Terminal Emulator.
 3. File Explorer.
 
