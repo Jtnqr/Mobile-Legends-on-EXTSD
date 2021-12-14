@@ -6,6 +6,12 @@ This script allows you to mount your Mobile Legends folder on EXTERNAL_SDCARD wi
 
 Using bindfs to mount and magisk for start on boot.
 
+## Prerequisite
+
+1. Magisk need to be installed.
+2. Terminal Emulator.
+3. File Explorer.
+
 ## Current Issues
 
 1. In order to get full path of EXTERNAL_SDCARD, the device must have 1 External Storage attached or it will crash.
@@ -19,6 +25,11 @@ Using bindfs to mount and magisk for start on boot.
 3. Put the script into magisk service.d directory /data/adb/service.d.
 4. Restart to get it mounted.
 5. Open **ml_log.txt** on /sdcard to see errors.
+
+## Todo
+
+1. Making this a magisk module.
+2. Add your requests to Issues.
 
 ## Credits
 - Kudos for compiled ARM64 bindfs to [Irfan Latif](https://android.stackexchange.com/questions/217741/how-to-bind-mount-a-folder-inside-sdcard-with-correct-permissions) post in Android Enthusiasts.
