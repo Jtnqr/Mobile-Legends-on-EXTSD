@@ -10,7 +10,7 @@ Using bindfs to mount and magisk for start on boot.
 
 1. Magisk.
 2. Terminal Emulator.
-3. File Explorer.
+3. Root File Explorer.
 
 ## Current Issues
 
